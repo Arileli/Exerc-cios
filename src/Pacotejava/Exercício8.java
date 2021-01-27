@@ -2,20 +2,20 @@ package Pacotejava;
 
 import java.util.Scanner;
 
-public class Exercício8 {
-	public static void main(String[] arg) {
+public class ExercÃ­cio8 {
+	public static void main(String [] arg){
+		double distribuidor=0,imposto,fabrica,valorTotal;
+		Scanner ler = new Scanner(System.in);
 		
-		Scanner ler = new Scanner (System.in);
+		System.out.println("Digite o valor de fabrica: ");
+		fabrica = ler.nextInt();
 		
-		double fabrica = 0, consumo = 0, arredondamento;
+		imposto = (fabrica*0.45);
+		distribuidor = (fabrica*0.28);
+		valorTotal = fabrica+imposto+distribuidor;
 		
-		 arredondamento = fabrica * 0.28 + fabrica * 0.48;
-		 
-		 arredondamento = Math.sqrt(consumo + 2);
-		 
-		 System.out.println("\nO melhor valor que temos para o senhor(a) é: " + "R$" + arredondamento);
+		System.out.println("O valor total Ã© R$: " + valorTotal);
 		 
 		 
 	}
-
 }
